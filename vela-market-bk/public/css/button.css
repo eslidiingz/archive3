@@ -1,0 +1,66 @@
+.btn {
+  @apply block px-4 py-2 mt-2 text-sm rounded-lg cursor-pointer;
+}
+.btn.active {
+  @apply font-semibold;
+}
+.btn.focus {
+  @apply outline-none;
+}
+
+/* primary */
+.btn-primary {
+  @apply text-yellow-500 bg-transparent;
+}
+.btn-primary.active {
+  @apply bg-yellow-400;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  @apply text-yellow-900 bg-yellow-400;
+}
+
+/* primary - solid */
+.btn-primary-solid {
+  @apply bg-yellow-400;
+}
+.btn-primary-solid:hover,
+.btn-primary-solid:focus {
+  @apply bg-yellow-500;
+}
+
+/* success - solid */
+.btn-success-solid {
+  @apply bg-green-500;
+}
+.btn-success-solid:hover,
+.btn-success-solid:focus {
+  @apply bg-green-600;
+}
+
+/* info - solid */
+.btn-info-solid {
+  @apply bg-blue-400;
+}
+.btn-info-solid:hover,
+.btn-info-solid:focus {
+  @apply bg-blue-500;
+}
+
+/* secondary */
+.btn-secondary {
+  @apply text-gray-900 bg-transparent;
+}
+.btn-secondary.active {
+  @apply bg-gray-200;
+}
+.btn-secondary:hover {
+  @apply text-gray-900 bg-gray-200;
+}
+.btn-secondary:focus {
+  @apply text-gray-900 bg-gray-200;
+}
+
+.btn-link {
+  cursor: pointer;
+}

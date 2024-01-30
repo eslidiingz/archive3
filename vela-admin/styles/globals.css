@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.zip {
+	width: 1px;
+}
+
+.bb {
+	border-bottom: 1px solid rgba(250, 252, 255, 0.1);
+}
+
+.panel-loading {
+	display: flex; justify-content: center; align-items: center;
+	position: absolute; z-index: 1000;
+	left: 0px; top: 0px;
+	width: 100%; height: 100%;
+	color: rgba(255,255,255,0.35); background-color: rgba(0,0,0,0.35);
+	font-size: 64px;
+}
+
+.filter-green {
+	filter: invert(75%) sepia(80%) saturate(1794%) hue-rotate(105deg) brightness(98%) contrast(105%);
+	cursor: pointer;
+}
+
+.tooltip {
+	position: relative;
+	width: 100%;
+}
+.tooltip > .tooltip-wrapper {
+	position: absolute; z-index: 10;
+	display: none;
+	top: -30px;
+	transform: translateX(-35%);
+	padding: 5px 10px 5px 10px;
+	background-color: #000000;
+	border-radius: 8px;
+}
+.tooltip:hover > .tooltip-wrapper {
+	display: block;
+}
+
+
+.pagination {
+	display: flex; justify-content: flex-end; align-items: center;
+	position: relative;
+}
+.pagination > .page-btn {
+	display: flex; justify-content: center; align-items: center;
+	position: relative;
+	margin: 0px 0px 0px 7.5px;
+	width: 32px; height: 32px;
+	color: #000000; background-color: rgba(215,215,215,0.5);
+	font-size: 20px; font-weight: 600;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.pagination > .page-btn:hover {
+	color: #000000; background-color: #00FCB2;
+}
+.pagination > .page-btn.active {
+	background-color: #00FCB2;
+}
+
+.input {
+	@apply px-2 py-2 outline-none text-gray-800
+}
+
+select.input {
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
+}
+
+.button-primary {
+	@apply bg-primary hover:bg-primary hover:bg-opacity-90 active:bg-opacity-70 px-4 py-2
+}
+
+.section-funciton-result {
+	font-size: 1.25rem;
+}
+

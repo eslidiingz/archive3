@@ -1,0 +1,18 @@
+version: '3.6'
+services:
+  web:
+    image: node:16-alpine3.12
+    restart: always
+    # networks:
+    #   - caddy
+    command: tail -f
+    volumes:
+    - ./:/home/node/app
+    working_dir: /home/node/app
+    # labels:
+    #   caddy: dexb.multiverse2021.io
+    #   caddy.reverse_proxy: "{{upstreams 3000}}"
+
+# networks:
+#   caddy:
+#     external: true

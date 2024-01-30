@@ -1,0 +1,163 @@
+:root {
+  --primary: yellow;
+}
+.bg-main {
+  @apply bg-yellow-400;
+}
+.bg-sub {
+  @apply bg-yellow-500;
+}
+
+.text-primary {
+  @apply text-yellow-400;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+.content {
+  @apply relative py-6;
+}
+.title {
+  @apply text-4xl font-extrabold tracking-tight text-gray-900 border-b border-gray-200  py-4;
+}
+
+.p {
+  @apply text-gray-700 py-2 text-sm leading-5;
+}
+.card {
+  @apply bg-white drop-shadow rounded;
+}
+.card > .card-header {
+  @apply p-4 border-b border-gray-200 text-xl bg-gray-50;
+}
+.card > .card-body {
+  @apply p-2;
+}
+.card > .card-footer {
+  @apply p-4 border-t border-gray-200 bg-gray-50 text-right;
+}
+
+.imgProfile60 {
+  width: 60px;
+  height: 60px;
+  @apply rounded-full;
+  overflow: hidden;
+}
+.imgProfile120 {
+  width: 120px;
+  height: 120px;
+}
+/* Components */
+.tab-item {
+  @apply border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-200;
+}
+
+.tab-item.active {
+  @apply border-yellow-500 text-yellow-600;
+}
+
+.tab-item .badge {
+  @apply bg-gray-100 text-gray-900;
+}
+.tab-item .badge.active {
+  @apply bg-yellow-100 text-yellow-600;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.land-me {
+  @apply before:absolute before:bg-blue-500 before:w-full before:h-full block;
+}
+
+.land-purchased {
+  /* @apply before:absolute before:w-full before:h-full block; */
+  @apply before:absolute before:bg-[#45FEB6] before:w-full before:h-full block;
+}
+.pagination{
+  display: flex;
+}
+.pagination li{
+  padding: 0 0.5rem;
+  border: 1px solid #ccc;
+}
+.paginate-active {
+  background-color: darkgray;
+}
+
+.filter-green {
+	filter: invert(75%) sepia(80%) saturate(1794%) hue-rotate(105deg) brightness(98%) contrast(105%);
+	cursor: pointer;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.pagination-item-pad { 
+  padding: .25rem 1rem !important;
+}
+
+.input-filter {
+  background-color: white !important;
+  color: black !important;
+}
+
+.tag-badge-container .tag-badge:not(:last-child) {
+  margin-right: .35rem;
+}
+
+.tag-badge {
+  position: relative;
+  color: black;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #00ffb6;
+  padding:.25rem;
+}
+
+.tag-badge:hover {
+  background-color: #01D196;
+}
+
+.oAuth-container {
+  display: flex;
+  color: black;
+  width: 50%;
+  margin: 3.5rem auto;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #FFF;
+}
+
+.is-invalid.is-invalid { 
+  border: 1px solid #C84850 !important;
+}

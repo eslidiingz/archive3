@@ -1,0 +1,30 @@
+{
+  "output": "generated/vela.",
+  "chain": "vela",
+  "datasources": [
+    {
+      "name": "token",
+      "address": "0x22F4bbA864363c7b35d665932a03fb3eD1a4d48A",
+      "startBlock": 200359,
+      "module": ["erc20", "accesscontrol"]
+    },
+    {
+      "name": "land",
+      "address": "0x45883d7eCCeDC0e94968B66E295C806A4a4Fc7d4",
+      "startBlock": 218177,
+      "module": ["erc721", "accesscontrol"]
+    },
+    {
+      "name": "marketplace",
+      "address": "0xAab86D80c3a84B3db880eE800aae3be2577D32Af",
+      "startBlock": 218181,
+      "module": ["erc721", "erc1155", "erc20", "accesscontrol"]
+    },
+    {
+      "name": "generate",
+      "address": "0x7c1689CC0265ce7589D0086936FA3baAF5c0dC57",
+      "startBlock": 218182,
+      "module": ["erc721", "pausable", "accesscontrol"]
+    }
+  ]
+}

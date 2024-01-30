@@ -1,0 +1,14 @@
+{
+  "openProcess": true,
+  "TokenAddress": "0x71389a83FB56AFE1Fa2df780A53aa17dB9af14f8",
+  "LandAddress": "0x3762E631bF41698C9e6d8247321A1AF7c717732f",
+  "LandFactory": "0x2620bEC21AE7F4171Ac8dCEA497A051BE4F95cBe",
+  "StorageAddress": "0x04c65116655012122325f97b73fcca889E0B6415",
+  "MarketPlaceAddress": "0xC8D8214b1fd5516C1818979B1CfC72AC0547478a",
+  "MarketAuctionAddress": "0x75C5986104c0Ad835fd9c9b78c762E42d6c5A750",
+  "ItemAddress": "",
+  "AvatarAddress": "",
+  "MarketSwapAddress": "",
+  "blockExplorer": "https://rinkeby.etherscan.io",
+  "shuffleURI": "http://165.22.62.142:18089/shuffle"
+}

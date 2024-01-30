@@ -1,0 +1,17 @@
+{
+  "chainMoralis": "bsc",
+  "chainId": "56",
+  "whitelist": [
+    "0x9880cc2A5Bfa072E7D3f725C4Ff1aC77220aeD9A",
+    "0x4C05D6F5A935Ad4860049cA0fBF331Ce4ED64956",
+    "0xe57EDc546Ee99f17a5d6e32C2457B4569ecD40f8"
+  ],
+  "whitelistABI": [
+    "utils/abis/land.json",
+    "utils/abis/mint.json",
+    "utils/abis/token.json"
+  ],
+  "landCollection": "61f502ca662617aed7679a72",
+  "appId": "lTusZCaqLLgzDvV54AqtRIsO6Y9WCpz0SMin7N83",
+  "serverURL": "https://lvgussvbescu.usemoralis.com:2053/server"
+}

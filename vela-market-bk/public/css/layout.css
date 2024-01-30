@@ -1,0 +1,194 @@
+html {
+  font-family: 'Martel', 'Prompt', ui-sans-serif, "Helvetica Neue";
+  background-color: #181818;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Tienne', 'Prompt', ui-sans-serif, "Helvetica Neue";
+  color: #e2932e;
+}
+
+.text-primary {
+  color: #e2932e !important;
+}
+
+.contentLayout {
+  position: relative;
+  min-height: calc(100vh - 208px) !important;
+}
+.contentLayout > .contentLayoutMenu {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: -100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 100;
+}
+.contentLayout > .contentLayoutMenu.active {
+  left: 0;
+}
+.contentLayout > .contentLayoutBox {
+  width: 100%;
+  min-height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .contentLayout {
+    display: flex;
+  }
+  .contentLayout > .contentLayoutMenu {
+    position: relative;
+    width: 382px;
+    left: 20px;
+    height: calc(100vh - 239px);
+    margin-bottom: 30px;
+    min-height: 400px;
+  }
+  .contentLayout > .contentLayoutBox {
+    width: calc(100% - 402px);
+  }
+}
+
+.dropdown:focus-within ~ .dropdown-menu,
+.dropdown-menu:focus-within {
+  opacity: 1;
+  transform: translate(0, 1.25rem) scale(1);
+  visibility: visible;
+}
+
+.epic-topbar {
+  height: 120px;
+  width: calc(100% - 30px);
+  margin: 10px auto;
+  position: relative;
+}
+
+.epic-topbar .epic-topbar-bg {
+  background-image: url("../assets/image/topbar-bg.png");
+  background-size: 402px 80px;
+    height: 120px;
+    background-position-y: 10px;
+    width: calc(100% - 454px);
+    position: absolute;
+    left: 356px;
+    background-repeat: repeat-x;
+}
+
+.epic-topbar .epic-topbar-bg::after {
+  content: '';
+  background-image: url("../assets/image/logo_topbar.png");
+  background-size: 356px 116px;
+  position: absolute;
+  top: -6px;
+  left: -356px;
+  width: 356px;
+  height: 116px;
+}
+
+
+.epic-topbar .epic-topbar-bg::before {
+  content: '';
+  background-image: url("../assets/image/topbar-after.png");
+  background-size: 100px 88px;
+  position: absolute;
+  top: 10px;
+  right: -98px;
+  width: 98px;
+  height: 88px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.epic-topbar .epic-topbar-widget {
+  position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.epic-topbar .epic-nav {
+  position: relative;
+  z-index: 2;
+  top: 26px;
+}
+.topbar-fill-btn {
+  background-image: url("../assets/image/topbar-fill.png");
+  width: 267px;
+  height: 58px;
+  background-size: 267px 58px;
+  top: 12px;
+  position: relative;
+  right: 29px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+}
+
+.contentLayoutMenu .contentLayoutMenu-body {
+  background-image: url("../assets/image/sidebar_body.png");
+  background-color: unset;
+    background-size: 340px auto;
+    background-repeat-x: no-repeat;
+    background-position: 20px 0px;
+    height: calc(100% - 50px);
+    margin-top: 24px;
+    padding: 40px 0px;
+}
+
+.contentLayoutMenu .contentLayoutMenu-top {
+  background-image: url("../assets/image/sidebar_border.png");
+    position: absolute;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-size: 356px 120px;
+    background-position-x: 12px;
+    width: 100%;
+    height: 117px;
+    z-index: 0;
+}
+
+.contentLayoutMenu .contentLayoutMenu-bottom {
+  background-image: url("../assets/image/sidebar_border.png");
+  position: absolute;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: 356px 120px;
+    background-position-x: 12px;
+    width: 100%;
+    height: 117px;
+    z-index: 0;
+  transform: scaleY(-1);
+}
+
+.menu-sidebar {
+  z-index: 999;
+  padding: 0px;
+}
+
+.btn-sidebar-menu {
+  background-image: url("../assets/image/sidebar_menu_bg.png");
+  width: 378px;
+  height: 90px;
+  padding: 0px;
+  background-size: 100% 90px;
+  margin: 15px 0px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: 'Tienne';
+  font-weight: 600;
+  color: #4c4c53;
+}
+
+.btn-sidebar-menu.active {
+  color: #9d1414;
+  font-weight: 600;
+}

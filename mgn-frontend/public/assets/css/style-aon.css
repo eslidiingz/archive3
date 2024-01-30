@@ -1,0 +1,328 @@
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Russo One', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    overflow: unset;
+    padding: 0 20px;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    border-bottom: 1px solid #E7E7E7;
+    z-index: 999;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    width: 112px;
+    background-color: #2C3635;
+    height: calc(100vh - 60px);
+}
+
+.layout-wrapper .content {
+    position: relative;
+    top: 0;
+    left: 112px;
+    width: calc(100% - 112px);
+    margin-top: 60px;
+    min-height: calc(100vh - 205px);
+}
+
+footer {
+    left: 112px;
+    width: calc(100% - 112px);
+    position: relative;
+}
+
+
+.fix-container {
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+}
+
+
+
+
+.sidebar-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.navbar .btn-Offcanvas-sm {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.navbar .logo {
+    width: 160px;
+    height: auto;
+}
+
+.navbar .navbar-right {
+    margin-left: auto;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-left: 1px solid #E7E7E7;
+}
+
+.wallet-address {
+    display: flex;
+    font-family: 'Russo One', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.wallet-address .wallet-address-title {
+    font-size: 14px;
+    color: #666666;
+}
+.wallet-address .wallet-address-address {
+    font-size: 17px;
+    color: #2C3635;
+    line-height: 22px;
+}
+
+.icon-nav {
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.nav-sidebar-link .icon-home {background-image: url("../image/nav/icon-home.svg");}
+.nav-sidebar-link .icon-project {background-image: url("../image/nav/icon-project.svg");}
+.nav-sidebar-link .icon-inventory {background-image: url("../image/nav/icon-inventory.svg");}
+.nav-sidebar-link .icon-market {background-image: url("../image/nav/icon-market.svg");}
+.nav-sidebar-link .icon-whitepaper {background-image: url("../image/nav/icon-whitepaper.svg");}
+
+.nav-sidebar-link.active .icon-home {background-image: url("../image/nav/icon-home-active.svg");}
+.nav-sidebar-link.active .icon-project {background-image: url("../image/nav/icon-project-active.svg");}
+.nav-sidebar-link.active .icon-inventory {background-image: url("../image/nav/icon-inventory-active.svg");}
+.nav-sidebar-link.active .icon-market {background-image: url("../image/nav/icon-market-active.svg");}
+.nav-sidebar-link.active .icon-whitepaper {background-image: url("../image/nav/icon-whitepaper-active.svg");}
+
+.nav-sidebar-link:hover .icon-home {background-image: url("../image/nav/icon-home-active.svg");}
+.nav-sidebar-link:hover .icon-project {background-image: url("../image/nav/icon-project-active.svg");}
+.nav-sidebar-link:hover .icon-inventory {background-image: url("../image/nav/icon-inventory-active.svg");}
+.nav-sidebar-link:hover .icon-market {background-image: url("../image/nav/icon-market-active.svg");}
+.nav-sidebar-link:hover .icon-whitepaper {background-image: url("../image/nav/icon-whitepaper-active.svg");}
+
+
+.nav-sidebar-link {
+    width: 91px;
+    height: 91px;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    transition: all 0.3s ease-out;
+}
+
+.nav-sidebar-link.active {
+    background-color: #ffffff20;
+}
+
+.nav-text {
+    margin-bottom: 0px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.btn.btn-user-btn:focus {
+    box-shadow:none;
+}
+
+.navbar a {
+    text-align: left;
+}
+
+.btn.btn-user-btn::after {
+    display: none;
+}
+
+.navbar-right .dropdown-menu {
+    flex-direction: column;
+    width: 289px;
+    margin: 10px 0.75rem;
+}
+
+.navbar-right .dropdown-menu.show {
+    display: flex;
+}
+
+.dropdown-info {
+    padding: 0 15px;
+}
+
+.dropdown-info .coin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.dropdown-info .coin:last-child {
+    margin-bottom: 0px;
+}
+
+.coin .coin-img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.coin .coin-img img {
+    width: 100%;
+}
+.coin .coin-value {
+    width: calc(100% - 25px - 38px - 14px);
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    text-align: right;
+    margin-left: 10px;
+    margin-right: 4px;
+    line-height: 18px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.coin .coin-name {
+    width: 38px;
+    font-size: 10px;
+    line-height: 18px;
+    font-family: 'Russo One', sans-serif;
+    margin-top: 3px;
+    color: #666;
+}
+
+.user-account {
+    display: flex;
+    align-items: center;
+}
+.user-account .user-account-img {
+    width: 32px;
+    height: 32px;
+}
+
+.user-account .wallet-address {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.offcanvas-start {
+    width: unset;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.footer-bg {
+    background-color: #c1d2ce;
+}
+@media (max-width: 991.98px) { 
+    .layout-wrapper .content {
+        top: 0;
+        left: 0px;
+        width: 100%;
+    }
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .fix-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    footer {
+        left: 0px;
+        width: 100%;
+        position: relative;
+    }
+
+    .navbar .navbar-right {
+        border-left: none;
+    }
+    
+    
+}
+@media (max-width:540px) {
+    .navbar-right .dropdown-menu {
+        flex-direction: column;
+        width: 230px;
+        margin: 10px 0.75rem;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+
+/** Button copy wallet address **/
+.btn-copy-wallet {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-copy-wallet .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: #55555599;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    right: 0;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.75rem;
+}
+
+.btn-copy-wallet .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 12px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #55555599 transparent;
+}
+
+.btn-copy-wallet:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

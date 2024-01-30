@@ -1,0 +1,22 @@
+{
+  "openProcess": true,
+  "basePrice": 500,
+  "baseToken": "CLASS",
+  "BUSD_TOKEN_ADDR": "0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee",
+  "CLASS_TOKEN_ADDR": "0xe57EDc546Ee99f17a5d6e32C2457B4569ecD40f8",
+  "LAND_ADDR": "0x9880cc2A5Bfa072E7D3f725C4Ff1aC77220aeD9A",
+  "WHITE_LIST": "0xEAEEc69249B20273dc52EEf405C05949D0e74E53",
+  "MARKETPLACE_ADDR": "0xf9A1B5d1276Fa05dcDbC7AEB0e2677bF042b779E",
+  "AUCTION_ADDR": "",
+  "GENNFT_ADDR": "0x4C05D6F5A935Ad4860049cA0fBF331Ce4ED64956",
+  "FACTORY_ADDR": "0x4873C1a322e517afEC696ABa4A8335d7372CB390",
+  "FACTORY_2_ADDR": "0x72DB540EB86239D6ff31d27896656C1E289BBE8C",
+  "BLOCK_EXPLORER": "https://bscscan.com",
+  "shuffleURI": "https://cdn.velaverse.io/shuffle",
+  "mintAssetURI": "https://cdn.velaverse.io/upload_json",
+  "collectionApi": "https://collection.velaverse.io/api/v1",
+  "cronApi": "https://corn.velaverse.io/api/list",
+  "verifyBuilding": "https://gameserver.velaverse.io",
+  "urlGetBuilding": "https://gameserver.velaverse.io/get-building",
+  "url3d": "https://3d.velaverse.io/"
+}

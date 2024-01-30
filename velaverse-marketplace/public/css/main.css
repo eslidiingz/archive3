@@ -1,0 +1,65 @@
+:root {
+  --primary: yellow;
+}
+.bg-main {
+  @apply bg-yellow-400;
+}
+.bg-sub {
+  @apply bg-yellow-500;
+}
+
+.text-primary {
+  @apply text-yellow-400;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+.content {
+  @apply relative py-6;
+}
+.title {
+  @apply text-4xl font-extrabold tracking-tight text-gray-900 border-b border-gray-200  py-4;
+}
+
+.p {
+  @apply text-gray-700 py-2 text-sm leading-5;
+}
+.card {
+  @apply bg-white drop-shadow rounded;
+}
+.card > .card-header {
+  @apply p-4 border-b border-gray-200 text-xl bg-gray-50;
+}
+.card > .card-body {
+  @apply p-2;
+}
+.card > .card-footer {
+  @apply p-4 border-t border-gray-200 bg-gray-50 text-right;
+}
+
+.imgProfile60 {
+  width: 60px;
+  height: 60px;
+  @apply rounded-full;
+  overflow: hidden;
+}
+.imgProfile120 {
+  width: 120px;
+  height: 120px;
+}
+/* Components */
+.tab-item {
+  @apply border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-200;
+}
+
+.tab-item.active {
+  @apply border-yellow-500 text-yellow-600;
+}
+
+.tab-item .badge {
+  @apply bg-gray-100 text-gray-900;
+}
+.tab-item .badge.active {
+  @apply bg-yellow-100 text-yellow-600;
+}
